@@ -1,12 +1,7 @@
-import React, { useState, useEffect } from 'react'
+import React from 'react'
 import Button from './atoms/button/index'
 
 function App() {
-
-    useEffect(() => {
-
-    })
-
     return (
         <div className='container'>
             <div className='row'>

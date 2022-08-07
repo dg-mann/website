@@ -1,0 +1,26 @@
+@mixin typo-bold {
+    font-family: 'Roboto Slab Bold';
+}
+
+@mixin typo-light {
+    font-family: 'Roboto Slab Light';
+}
+
+@mixin typo-regular {
+    font-family: 'Roboto Slab Regular';
+}
+
+@mixin typo-black {
+    font-family: 'Roboto Slab Black';
+}
+
+@mixin typo-body {
+    @include typo-regular;
+    font-size: 1.4rem;
+}
+
+@mixin typo-h1 {
+    @include typo-black;
+    font-size: 10rem;
+    line-height: 11rem;
+}

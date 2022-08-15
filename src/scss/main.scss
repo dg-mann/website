@@ -9,7 +9,8 @@ html {
 body {
   @include typo-body;
   background-color: $base-color-white;
-  color: $base-color-orange;
+  color: $base-color-red;
+  margin: 0;
 }
 
 h1 {

@@ -1,14 +1,25 @@
 import React from 'react'
-import Button from './atoms/button/index'
-
+import Chapter from './organisms/chapter/index'
+import Header from './organisms/header/index'
+import "./styles.scss"
+import suffixSVG from '../assets/images/chapter-suffix.svg'
 function App() {
     return (
-        <div className='container'>
-            <div className='row'>
-                <h1 className="col-6">DGMANN</h1>
-                <div className='col-6'>
-                    <Button text='Submit' />
-                </div>
+        <div className='app'>
+            <Header />
+            <div className="app__chapter" >
+                <Chapter className="app__chapter" suffixSVG={suffixSVG}>
+                    <div className='row'>
+                        <h1 className="col-6">DG</h1>
+                    </div>
+                </Chapter>
+            </div>
+            <div className="app__chapter" >
+                <Chapter type="dark">
+                    <div className='row'>
+                        <h1 className="col-6">DG</h1>
+                    </div>
+                </Chapter>
             </div>
         </div>
 

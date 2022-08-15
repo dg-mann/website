@@ -1,0 +1,17 @@
+@import 'scss/variables';
+@import 'scss/mixins';
+
+.button {
+    @include typo-bold;
+    color: $base-color-white;
+    background-color: $base-color-red;
+    border-radius: 1rem;
+    padding: 1rem;
+    border: 1px solid $base-color-white;
+    cursor: pointer;
+
+    &:hover,
+    &:focus {
+        background-color: rgba($base-color-red, 0.8)
+    }
+}

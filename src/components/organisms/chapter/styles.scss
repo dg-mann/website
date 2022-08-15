@@ -1,0 +1,22 @@
+@import 'scss/variables';
+
+.chapter {
+
+    &--light {
+        background-color: $base-color-white;
+    }
+
+    &--dark {
+        background-color: $base-color-blue-dark;
+    }
+
+    &__image {
+        top: calc(100% - 0.1rem);
+    }
+
+    &__suffix-svg {
+        width: calc(100vw + 0.1rem); // to fit in viewport
+        padding: 0;
+        margin-left: -0.1rem;
+    }
+}

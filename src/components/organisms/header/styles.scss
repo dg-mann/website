@@ -1,0 +1,36 @@
+@import 'scss/variables';
+@import 'scss/mixins';
+
+.header {
+    font-family: 'Knewave Regular', Arial, sans-serif;
+    position: fixed;
+    display: flex;
+    top: 0;
+    left: 0;
+    right: 0;
+    align-items: center;
+    background-color: $header-background-color;
+    color: $header-text-color;
+    height: $header-height;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    transition: height 0.8s ease-in-out;
+
+    &--small {
+        height: 6rem;
+    }
+
+    &__logo {
+        width: 4rem;
+        transition: transform 0.8s ease-in-out;
+
+        &--rotate {
+            transform: rotate(90deg);
+        }
+    }
+
+    &__content {
+        @include typo-l;
+        margin-left: auto;
+    }
+}
